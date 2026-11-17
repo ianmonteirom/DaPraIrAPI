@@ -135,3 +135,4 @@ D:\Estudos\FIAP\3 Ano\2 semestre\gs\csharp\DaPraIr.API\obj\Debug\net8.0\DaPraIr.
 D:\Estudos\FIAP\3 Ano\2 semestre\gs\csharp\DaPraIr.API\obj\Debug\net8.0\DaPraIr.API.pdb
 D:\Estudos\FIAP\3 Ano\2 semestre\gs\csharp\DaPraIr.API\obj\Debug\net8.0\DaPraIr.API.genruntimeconfig.cache
 D:\Estudos\FIAP\3 Ano\2 semestre\gs\csharp\DaPraIr.API\obj\Debug\net8.0\ref\DaPraIr.API.dll
+D:\Estudos\FIAP\3 Ano\2 semestre\gs\csharp\DaPraIr.API\obj\Debug\net8.0\DaPraIr.API.sourcelink.json

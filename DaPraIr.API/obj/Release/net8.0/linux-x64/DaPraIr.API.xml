@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DaPraIr.API</name>
+    </assembly>
+    <members>
+        <member name="M:DaPraIr.API.Controllers.AvisosController.Listar(System.Int32)">
+            <summary>Lista avisos ativos do lugar (elevador quebrado, obra, horário especial)</summary>
+        </member>
+        <member name="M:DaPraIr.API.Controllers.AvisosController.Criar(System.Int32,DaPraIr.API.DTOs.CriarAvisoDto)">
+            <summary>Registra novo aviso para o lugar — qualquer pessoa pode avisar a comunidade</summary>
+            <remarks>
+            Exemplo de body: { "titulo": "Elevador quebrado", "descricao": "Acesso B fora de serviço", "tipo": "elevador", "expiraEm": "2026-11-22T23:59:00Z" }
+            </remarks>
+        </member>
+        <member name="M:DaPraIr.API.Controllers.LugaresController.Buscar(DaPraIr.API.DTOs.BuscaPerfilDto)">
+            <summary>Busca lugares compatíveis com o perfil de acessibilidade informado</summary>
+            <remarks>
+            Exemplo: GET /api/lugares?bairro=Pinheiros&amp;necessitaAutismo=true
+            </remarks>
+        </member>
+        <member name="M:DaPraIr.API.Controllers.LugaresController.Detalhe(System.Int32)">
+            <summary>Retorna ficha completa do lugar, incluindo avisos ativos e histórico de relatos</summary>
+        </member>
+        <member name="M:DaPraIr.API.Controllers.RelatosController.Relatar(System.Int32,DaPraIr.API.DTOs.RelataVisitaDto)">
+            <summary>Registra relato pós-visita de forma anônima — "deu certo?"</summary>
+            <remarks>
+            Cada relato alimenta a taxa de sucesso do lugar e pode se tornar evidência para a prefeitura.
+            Exemplo: { "deuCerto": false, "comentario": "Elevador quebrado de novo", "necessidadesPerfil": ["cadeira_de_rodas"] }
+            </remarks>
+        </member>
+    </members>
+</doc>

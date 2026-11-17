@@ -97,6 +97,59 @@ DaPraIr.API/
 
 ---
 
+## Evidências da aplicação
+
+### Swagger UI — documentação interativa
+
+![Swagger UI com todos os endpoints](evidencias/01-swagger-overview.jpg)
+
+### GET /api/lugares?usaCadeira=true — busca por cadeirante
+
+![Resposta filtrada para cadeirante](evidencias/02-get-lugares-cadeirante.jpg)
+
+```json
+[{"id":1,"nome":"UBS Vila Mariana","tipo":"UBS","bairro":"Vila Mariana",
+  "taxaSucesso":66.7,"totalRelatos":3,"avisosAtivos":0,
+  "daPraIr":true,"recomendacao":"Pode funcionar. Melhor horário: terça e quinta, das 14h às 16h."}]
+```
+
+### GET /api/lugares/1 — ficha completa com acessibilidade
+
+![Detalhe do lugar com ficha de acessibilidade](evidencias/03-get-lugar-detalhe.jpg)
+
+### GET /api/lugares?necessitaAutismo=true — busca para autismo
+
+![Resposta filtrada para autismo](evidencias/04-get-lugares-autismo.jpg)
+
+```json
+[{"id":3,"nome":"Clínica Sorrir Para Todos","tipo":"Dentista","bairro":"Pinheiros",
+  "taxaSucesso":100,"totalRelatos":3,"avisosAtivos":0,
+  "daPraIr":true,"recomendacao":"Dá pra ir! Melhor horário: manhã, qualquer dia da semana."}]
+```
+
+### POST /api/lugares/1/relatos — relato anônimo pós-visita
+
+```json
+// Request
+{"deuCerto": true, "comentario": "Rampa funcionando bem", "necessidadesPerfil": ["cadeira_de_rodas"]}
+
+// Response 200 OK
+{"id": 9, "deuCerto": true, "mensagem": "Relato registrado. Obrigado por contribuir!"}
+```
+
+### GET /api/lugares/2/avisos — avisos ativos após POST
+
+```json
+[
+  {"id":1,"titulo":"Elevador do acesso B em manutenção","tipo":"elevador",
+   "criadoEm":"2026-11-17","expiraEm":"2026-11-20"},
+  {"id":2,"titulo":"Elevador principal em manutencao","tipo":"manutencao",
+   "criadoEm":"2026-11-17","expiraEm":null}
+]
+```
+
+---
+
 ## ODS atendidas
 
 - **ODS 3** — Saúde e bem-estar  

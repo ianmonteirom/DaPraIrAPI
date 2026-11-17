@@ -1,0 +1,18 @@
+﻿[
+    {
+        "id":  1,
+        "titulo":  "Elevador do acesso B em manutenção",
+        "descricao":  "Use o elevador do acesso A na Rua Vergueiro. Previsão de retorno: 3 dias.",
+        "tipo":  "elevador",
+        "criadoEm":  "2026-11-17T18:03:14.1643514",
+        "expiraEm":  "2026-11-20T18:03:14.1644483"
+    },
+    {
+        "id":  2,
+        "titulo":  "Elevador principal em manutencao",
+        "descricao":  "Use o elevador da saida Vergueiro. Previsao: ate 18h.",
+        "tipo":  "manutencao",
+        "criadoEm":  "2026-11-17T18:05:56.823758",
+        "expiraEm":  null
+    }
+]

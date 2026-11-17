@@ -1,0 +1,12 @@
+﻿{
+    "id":  3,
+    "nome":  "Clínica Sorrir Para Todos",
+    "tipo":  "Dentista",
+    "bairro":  "Pinheiros",
+    "endereco":  "Rua das Flores, 420",
+    "taxaSucesso":  100,
+    "totalRelatos":  3,
+    "avisosAtivos":  0,
+    "daPraIr":  true,
+    "recomendacao":  "Dá pra ir! Melhor horário: manhã, qualquer dia da semana."
+}

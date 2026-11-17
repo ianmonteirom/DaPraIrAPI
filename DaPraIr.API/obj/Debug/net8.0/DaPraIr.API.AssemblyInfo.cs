@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DaPraIr.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4023c13f3451f0169694f780c05f38c0189b5f07")]
 [assembly: System.Reflection.AssemblyProductAttribute("DaPraIr.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DaPraIr.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

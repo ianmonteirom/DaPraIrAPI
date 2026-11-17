@@ -1,0 +1,27 @@
+﻿{
+    "id":  1,
+    "nome":  "UBS Vila Mariana",
+    "tipo":  "UBS",
+    "bairro":  "Vila Mariana",
+    "endereco":  "Rua Domingos de Morais, 1500",
+    "cidade":  "São Paulo",
+    "latitude":  -23.5932,
+    "longitude":  -46.6378,
+    "ficha":  {
+                  "descricao":  "Unidade básica de saúde com atendimento geral",
+                  "passoAPasso":  "1. Entre pela rua principal. 2. Recepção à esquerda. 3. Tire a senha no painel eletrônico.",
+                  "nivelBarulho":  "médio",
+                  "horariosTranquilos":  "terça e quinta, das 14h às 16h",
+                  "temElevador":  false,
+                  "temRampa":  true,
+                  "temBanheiroAdaptado":  true,
+                  "atendePCD":  true,
+                  "atendeAutismo":  false,
+                  "validadeAte":  "2027-02-17T18:03:14.1638284"
+              },
+    "avisosAtivos":  [
+
+                     ],
+    "taxaSucesso":  75,
+    "totalRelatos":  4
+}
