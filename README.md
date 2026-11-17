@@ -19,7 +19,7 @@
 | **Solução** | App que responde "dá pra ir?" com base na ficha de acessibilidade do lugar e nos relatos anônimos de quem visitou antes |
 | **Público-alvo** | PCDs (cadeirantes, pessoas com deficiência auditiva/visual), autistas, famílias atípicas, cuidadores |
 | **ODS atendidas** | ODS 3 (Saúde e bem-estar), ODS 10 (Redução das desigualdades), ODS 11 (Cidades sustentáveis) |
-| **Tecnologias** | .NET 8 Web API (C#), EF Core, SQLite, Bash, systemd, Ubuntu/WSL2 |
+| **Tecnologias** | .NET 8 Web API (C#), EF Core, SQLite |
 | **Repositório** | https://github.com/ianmonteirom/DaPraIrAPI |
 
 ---
@@ -47,47 +47,24 @@ gs/
 ├── csharp/          # Entrega C# — .NET 8 Web API
 │   ├── DaPraIr.API/
 │   └── README.md
-├── os/              # Entrega SO — Bash + systemd
-│   ├── scripts/
-│   ├── systemd/
-│   └── README.md
-├── roteiro-video.md # Roteiro do vídeo de apresentação
 ├── prompts.md       # Prompts utilizados com IA
 └── README.md        # Este arquivo
 ```
 
 ---
 
-## Entregas
+## Entrega
 
 | Disciplina | Pasta | Descrição |
 |---|---|---|
 | **Desenvolvimento em C#** | `csharp/` | API REST .NET 8 com EF Core, LINQ, async/await, POO |
-| **Sistemas Operacionais** | `os/` | Scripts Bash de provisionamento, deploy e monitoramento + systemd |
-| **Vídeo** | `roteiro-video.md` | Roteiro da apresentação de 4 minutos |
 
 ---
 
 ## Como executar
 
-### C# API
-
 ```bash
 cd csharp/DaPraIr.API
 dotnet run
 # Acesse: http://localhost:5000/swagger
-```
-
-### Linux (WSL2 / Ubuntu)
-
-```bash
-# 1. Provisionamento
-sudo bash os/scripts/01-infra.sh
-
-# 2. Deploy
-dotnet publish csharp/DaPraIr.API -c Release -o /tmp/dapraIr-pub
-sudo bash os/scripts/02-app.sh /tmp/dapraIr-pub
-
-# 3. Monitoramento
-sudo bash os/scripts/03-monitor.sh
 ```
