@@ -1,0 +1,17 @@
+# .NET build output
+**/bin/
+**/obj/
+publish/
+
+# Local SQLite
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs gerados em runtime
+*.log
+
+# Misc
+.DS_Store
+Thumbs.db
